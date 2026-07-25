@@ -1,0 +1,9 @@
+/bitrix/
+/upload/
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/.env
+/bitrix/php_interface/dbconn.php
+/.idea/
+/.vscode/
