@@ -1165,6 +1165,10 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         pointer-events: none;
         z-index: 1;
     }
+
+    .faq h1 {
+        margin: 60px 0 10px 0;
+    }
 </style>
 <script>
     const faqItems = document.querySelectorAll('.faq-item');

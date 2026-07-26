@@ -3,7 +3,6 @@
 <footer>
     <div class="container">
         <div class="footer-grid">
-            <!-- Левая колонка: Логотип + описание -->
             <div class="footer-col footer-about">
                 <div class="logo">
                     <div>
@@ -16,7 +15,6 @@
                 </div>
             </div>
 
-            <!-- Центральная колонка: Меню (горизонтально) -->
             <div class="footer-col footer-nav">
                 <ul class="footer-menu">
                     <li><a href="#">Главная</a></li>
@@ -27,31 +25,28 @@
                     <li><a href="#">Отзывы</a></li>
                 </ul>
             </div>
-
-            <!-- Правая колонка: Контакты + Соцсети -->
             <div class="footer-col footer-contacts" style="display:flex">
                 <div class="footer-contacts-left">
                     <div class="footer-contact-item">
-                        <span class="footer-icon">📞</span>
                         <a href="tel:+79618956935">+7 (961) 895-69-35</a>
                     </div>
                     <div class="footer-contact-item">
-                        <span class="footer-icon">✉️</span>
                         <a href="mailto:info@energopravoved.ru">info@energopravoved.ru</a>
                     </div>
                 </div>
-                <!-- Блок социальных сетей (горизонтально) -->
+
+            </div>
+            <div>
                 <div class="footer-social">
-                    <a href="#" class="social-link" aria-label="ВКонтакте">ВК</a>
-                    <a href="#" class="social-link" aria-label="Telegram">TG</a>
-                    <a href="#" class="social-link" aria-label="WhatsApp">WA</a>
-                    <a href="#" class="social-link" aria-label="YouTube">YT</a>
+                    <a href="#" class="social-link" aria-label="ВКонтакте"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/phone.svg" alt=""></a>
+                    <a href="#" class="social-link" aria-label="ВКонтакте"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/vk.svg" alt=""></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/tg.svg" alt=""></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/max.svg" alt=""></a>
                 </div>
-                <div class="footer-contacts-right">
-                    <div class="footer-contact-item">
-                        <span class="footer-icon">📍</span>
-                        <span>Республика Хакасия<br>Красноярский край</span>
-                    </div>
+            </div>
+            <div>
+                <div class="footer-contact-item">
+                    <span>Республика Хакасия<br>Красноярский край</span>
                 </div>
             </div>
         </div>
@@ -62,32 +57,40 @@
     footer {
         background: #061d38;
         padding: 60px 0 30px;
-        color: #ddd;
+        color: white;
     }
 
     .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1.5fr;
-        gap: 40px;
-        align-items: start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* центрируем колонки по вертикали – это правильно */
     }
 
     /* Логотип в футере */
     .footer-about .logo {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         line-height: 1.2;
         gap: 20px;
     }
 
     .footer-about .logo img {
-        max-width: 120px;
+        display: block;
+        width: 57px;
         height: auto;
-        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .footer-about .logo>div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-about .logo-text {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 700;
         color: #D8B36A;
         letter-spacing: 1px;
@@ -95,11 +98,11 @@
 
     .footer-about .logo-sub {
         font-size: 14px;
-        color: #aaa;
+        color: #E4BD6A;
         margin-top: 2px;
     }
 
-    /* Меню в футере (горизонтальное) */
+    /* Меню в футере */
     .footer-menu {
         display: flex;
         flex-wrap: wrap;
@@ -110,20 +113,21 @@
     }
 
     .footer-menu li a {
-        color: #ddd;
+        color: white;
         text-decoration: none;
         transition: color 0.3s;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .footer-menu li a:hover {
         color: #D8B36A;
     }
 
-    /* Контакты в футере – две колонки внутри */
+    /* Контакты в футере */
     .footer-contacts {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        /* центрируем содержимое правой колонки */
     }
 
     .footer-contacts-left,
@@ -135,7 +139,6 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        margin-bottom: 15px;
         font-size: 16px;
     }
 
@@ -143,16 +146,11 @@
         margin-bottom: 0;
     }
 
-    .footer-icon {
-        font-size: 22px;
-        line-height: 1;
-        flex-shrink: 0;
-    }
-
     .footer-contact-item a {
-        color: #ddd;
+        color: white;
         text-decoration: none;
         transition: color 0.3s;
+        font-size: 13px;
     }
 
     .footer-contact-item a:hover {
@@ -160,38 +158,21 @@
     }
 
     .footer-contact-item span {
-        color: #ddd;
+        color: white;
         line-height: 1.5;
+        font-size: 13px;
     }
 
-    /* Социальные сети (горизонтально) */
+    /* Социальные сети */
     .footer-social {
         display: flex;
-        gap: 15px;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .social-link {
-        display: inline-block;
-        padding: 8px 16px;
-        background: rgba(255, 255, 255, 0.08);
-        color: #ddd;
-        text-decoration: none;
-        border-radius: 30px;
-        font-size: 14px;
-        font-weight: 600;
-        transition: background 0.3s, color 0.3s;
-    }
-
-    .social-link:hover {
-        background: #D8B36A;
-        color: #061d38;
+        gap: 10px;
     }
 
     /* Адаптив */
     @media (max-width: 992px) {
         .footer-grid {
+            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
         }
@@ -202,7 +183,7 @@
         }
 
         .footer-about .logo {
-            align-items: center;
+            justify-content: center;
         }
 
         .footer-contacts {
@@ -212,7 +193,7 @@
         }
 
         .footer-social {
-            justify-content: center;
+            display: flex;
         }
     }
 
@@ -223,7 +204,7 @@
         }
 
         .footer-about .logo {
-            align-items: center;
+            justify-content: center;
         }
 
         .footer-menu {
@@ -237,46 +218,6 @@
         .footer-social {
             justify-content: center;
         }
-    }
-
-    .footer-about .logo {
-        display: flex;
-        align-items: center;
-        /* логотип и текстовый блок по вертикали по центру */
-        gap: 20px;
-        /* расстояние между логотипом и текстом */
-    }
-
-    /* Контейнер с текстами – делаем вертикальную колонку и центрируем */
-    .footer-about .logo>div:last-child {
-        display: flex;
-        flex-direction: column;
-        /* тексты друг под другом */
-        align-items: center;
-        /* центрируем по горизонтали */
-        text-align: center;
-        /* на случай, если внутри ещё что-то */
-    }
-
-    .footer-about .logo-text {
-        font-size: 28px;
-        font-weight: 700;
-        color: #D8B36A;
-        letter-spacing: 1px;
-        /* убираем лишние отступы, если есть */
-    }
-
-    .footer-about .logo-sub {
-        font-size: 14px;
-        color: #aaa;
-        margin-top: 2px;
-        /* небольшой отступ сверху, чтобы не слипалось */
-    }
-
-    .footer-about .logo img {
-        display: block;
-        margin: 0 auto;
-        width: 57px;
     }
 </style>
 </body>
