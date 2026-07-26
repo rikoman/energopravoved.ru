@@ -74,7 +74,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
 <section class="principal" id="principal">
     <div class="container">
-        <h2 class="index-h2">Принципы компании</h2>
+        <h1 class="index-h1">ПРИНЦИПЫ КОМПАНИИ</h1>
         <div class="principal-grid">
             <div class="principal-item">
                 <div class="icon-wrapper">
@@ -190,7 +190,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 </section>
 <section class="price" id="price">
     <div class="container">
-        <h2 class="index-h2">Стоимость услуг</h2>
+        <h1 class="index-h1">СТОИМОСТЬ УСЛУГ</h1>
         <div class="accordion">
             <div class="acc-item">
                 <div class="acc-title">
@@ -199,9 +199,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                         <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icongalka.svg" alt="">
                     </span>
                 </div>
-                <div class="acc-content">
-                    Стоимость рассчитывается индивидуально после изучения документов.
-                </div>
+                <div class="acc-content">Стоимость рассчитывается индивидуально после изучения документов.</div>
             </div>
             <div class="acc-item">
                 <div class="acc-title">
@@ -258,9 +256,10 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         <div class="form-box">
             <form>
                 <h1>Заполните форму и мы свяжемся с вами</h1>
-                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="e-mail">
                 <input type="tel" placeholder="Телефон">
-                <textarea placeholder="Ваш вопрос"></textarea>
+                <textarea placeholder="Комментарий"></textarea>
                 <p>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *
                 </p>
                 <button>Отправить</button>
@@ -273,17 +272,15 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         <div class="contacts-grid">
             <!-- Колонка 1: Приглашение -->
             <div class="contacts-col">
-                <h3>Свяжитесь с нами любым удобным способом</h3>
+                <h1>Свяжитесь с нами любым удобным способом</h1>
             </div>
 
             <!-- Колонка 2: Телефон и Email -->
             <div class="contacts-col">
                 <div class="contacts-item">
-                    <span class="contacts-icon">📞</span>
                     <a href="tel:+79618956935">+7 (961) 895-69-35</a>
                 </div>
                 <div class="contacts-item">
-                    <span class="contacts-icon">✉️</span>
                     <a href="mailto:info@energopravoved.ru">info@energopravoved.ru</a>
                 </div>
             </div>
@@ -305,7 +302,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
 <section class="faq" id="faq">
     <div class="container">
-        <h2 class="index-h2">ВОПРОС - ОТВЕТ</h2>
+        <h1 class="index-h1">ВОПРОС - ОТВЕТ</h1>
 
         <div class="faq-item">
             <h3>
@@ -336,7 +333,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
 <section class="cases" id="cases">
     <div class="container">
-        <h2 class="index-h2">КЕЙСЫ</h2>
+        <h1 class="index-h1">КЕЙСЫ</h1>
         <div class="case-grid">
             <div class="case">
 
@@ -367,7 +364,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
 <section class="partners">
     <div class="container">
-        <h2>Наши партнеры</h2>
+        <h2>НАШИ ПАРТНЕРЫ</h2>
         <div class="carousel">
             <div class="carousel-container">
                 <div class="logos-wrapper">
@@ -405,7 +402,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 1335px;
         width: 100%;
         margin: 0 auto;
         padding: 0 15px;
@@ -596,7 +593,9 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         font-size: 16px;
     }
 
-    .index-h2 {
+    .index-h1 {
+        font-family: 'Playfair Display';
+        font-size: 36px;
         background: linear-gradient(91.43deg, #F8D797 3.9%, #C6941F 96.1%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -652,8 +651,8 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .acc-item {
-        border: 2px solid #D8B36A;
-        border-radius: 150px;
+        border: 3px solid #D8B36A;
+        border-radius: 39.5px;
         margin-bottom: 15px;
         overflow: hidden;
         transition: box-shadow 0.3s ease;
@@ -669,7 +668,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         color: white;
     }
@@ -699,8 +698,9 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .acc-item.active .acc-content {
-        max-height: 300px;
+        max-height: 500px;
         opacity: 1;
+        font-size: 18px;
         padding: 25px 25px;
     }
 
@@ -718,11 +718,19 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         justify-content: space-between;
         align-items: flex-start;
         gap: 60px;
+    }
+
+    .form-box h1 {
         color: black;
+    }
+
+    .form-box p {
+        color: #A1A4A8;
     }
 
     .form-box h1 {
         text-align: center;
+        font-size: 36px;
     }
 
 
@@ -779,11 +787,12 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .faq-item h3 {
+        font-family: Roboto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         padding: 15px 0;
         margin: 0;
@@ -791,7 +800,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .faq-item .faq-toggle {
-        font-size: 40px;
+        font-size: 48px;
         font-weight: 300;
         transition: transform 0.3s ease;
         color: #F5D390;
@@ -844,18 +853,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         color: #D8B36A;
         text-decoration: none;
         font-weight: bold;
-    }
-
-    /* ===== Partners ===== */
-    .partners {
-        padding: 80px 0;
-        background: #fff;
-    }
-
-    .partners h2 {
-        text-align: center;
-        color: #061d38;
-        margin-bottom: 50px;
     }
 
     .logos {
@@ -947,13 +944,14 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     .contact-form input,
     .contact-form textarea {
         width: 100%;
+        height: 63px;
         padding: 18px 20px;
         border: none;
         border-radius: 50px;
         /* круглые края у полей */
-        font-size: 16px;
+        font-size: 13px;
         background: #DDD2BF;
-        color: #333;
+        color: #505152;
         box-sizing: border-box;
         outline: none;
     }
@@ -961,16 +959,17 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     .contact-form textarea {
         border-radius: 24px;
         /* для textarea можно чуть меньше, но тоже скруглено */
-        height: 160px;
+        height: 163px;
         resize: vertical;
     }
 
     .contact-form button {
-        width: 220px;
-        padding: 18px;
+        margin-top: 20px;
+        width: 262px;
+        padding: 15px;
         border: none;
-        background: #D8B36A;
-        color: #061d38;
+        background: #F5D390;
+        color: #021631;
         border-radius: 50px;
         font-weight: bold;
         font-size: 16px;
@@ -984,17 +983,11 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         background: #c9a45a;
     }
 
-    /* ===== Contacts Block ===== */
-    .contacts {
-        padding: 60px 0;
-        background: #0a2948;
-        /* тёмный фон, можно подогнать под ваш дизайн */
-    }
 
     .contacts .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
+        height: 206px;
+        border-radius: 17px;
+        background-color: #F4EDE0;
     }
 
     .contacts-grid {
@@ -1006,10 +999,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         /* вертикальное выравнивание */
     }
 
-    .contacts-col {
-        color: #fff;
-    }
-
     .contacts-col h3 {
         font-size: 28px;
         font-weight: 700;
@@ -1017,6 +1006,16 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         line-height: 1.3;
         color: #D8B36A;
         /* золотой акцент */
+    }
+
+    .contacts-col h1 {
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 42px;
+        letter-spacing: 0%;
     }
 
     .contacts-item {
@@ -1038,16 +1037,13 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .contacts-item a {
-        color: #fff;
+        font-size: 16px;
+        color: #021631;
         text-decoration: none;
         transition: color 0.3s;
     }
 
     .contacts-item a:hover {
-        color: #D8B36A;
-    }
-
-    .contacts-item strong {
         color: #D8B36A;
     }
 
@@ -1068,17 +1064,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         }
     }
 
-    /* ===== Contacts Block ===== */
-    .contacts {
-        padding: 60px 0;
-        background: #0a2948;
-    }
 
-    .contacts .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
 
     .contacts-grid {
         display: grid;
@@ -1089,13 +1075,13 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
     /* Вертикальные перегородки между колонками */
     .contacts-col {
-        color: #fff;
+        color: #021631;
         padding: 10px 0;
     }
 
     /* У всех колонок, кроме последней, добавляем правую границу */
     .contacts-col:not(:last-child) {
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid #CA9928;
         /* полупрозрачная белая */
         padding-right: 30px;
         /* отступ от перегородки */
@@ -1127,20 +1113,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         flex-shrink: 0;
     }
 
-    .contacts-item a {
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .contacts-item a:hover {
-        color: #D8B36A;
-    }
-
-    .contacts-item strong {
-        color: #D8B36A;
-    }
-
     .contacts-item div {
         line-height: 1.6;
     }
@@ -1159,20 +1131,13 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             /* убираем перегородки */
             padding-right: 0;
             padding-bottom: 20px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid #CA9928;
             /* можно добавить горизонтальную черту */
         }
 
         .contacts-item {
             justify-content: center;
         }
-    }
-
-    /* ===== Partners Carousel ===== */
-    .partners {
-        padding: 80px 0;
-        background: #fff;
-        position: relative;
     }
 
     .partners h2 {
@@ -1208,9 +1173,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         max-width: 100%;
         height: auto;
         padding: 20px;
-        background: #f8f8f8;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         object-fit: contain;
         max-height: 120px;
         transition: transform 0.3s;
@@ -1356,8 +1318,8 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
     /* ===== Partners Carousel ===== */
     .partners {
-        padding: 80px 0;
-        background: #fff;
+        padding: 10px 0 60px 0;
+        background: #F4EDE0;
         position: relative;
     }
 
@@ -1391,9 +1353,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         max-width: 100%;
         height: auto;
         padding: 20px;
-        background: #f8f8f8;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         object-fit: contain;
         max-height: 120px;
         transition: transform 0.3s;
