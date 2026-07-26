@@ -377,10 +377,10 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             </div>
             <!-- Заменяем символы на иконки -->
             <button class="carousel-btn prev-btn">
-                <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icongalka.svg" alt="Назад" class="arrow-icon">
+                <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/arrow.svg" alt="Назад" class="arrow-icon">
             </button>
             <button class="carousel-btn next-btn">
-                <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/icongalka.svg" alt="Вперед" class="arrow-icon">
+                <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/arrow.svg" alt="Вперед" class="arrow-icon">
             </button>
         </div>
     </div>
@@ -398,7 +398,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: #061d38;
-        color: #fff;
     }
 
     .container {
@@ -466,27 +465,35 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         align-items: center;
     }
 
-    .hero-text {
-        width: 55%;
-    }
-
     .hero-text h1 {
-        font-size: 64px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 70.65px;
         line-height: 1.1;
         margin: 20px 0;
-        color: #D8B36A;
+        text-transform: uppercase;
+
+        /* Градиент для текста */
+        background: linear-gradient(91.43deg, #F8D797 3.9%, #C6941F 96.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /* для современных браузеров */
+        color: transparent;
+        /* запасной вариант */
     }
 
     .hero-text p {
-        line-height: 1.7;
-        margin-bottom: 35px;
-        color: #ddd;
+        font-family: Roboto;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 13px;
+        leading-trim: NONE;
+        line-height: 100%;
+        color: #FFFFFF;
+        margin-bottom: 30px;
     }
 
-    .hero-img {
-        width: 40%;
-        text-align: right;
-    }
 
     .hero-img img {
         max-width: 420px;
@@ -683,11 +690,11 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
     .acc-item.active .acc-icon {
         transform: rotate(180deg);
-        /* стрелка вниз -> вверх при открытии */
         color: #b8943e;
     }
 
     .acc-content {
+        color: white;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
@@ -704,86 +711,11 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         padding: 25px 25px;
     }
 
-    /* ===== Contact Form ===== */
-    .contact-form {
-        padding: 90px 0;
-    }
-
-    .form-box {
-        background-color: #F4EDE0;
-    }
-
-    .form-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 60px;
-    }
-
-    .form-box h1 {
-        color: black;
-    }
-
-    .form-box p {
-        color: #A1A4A8;
-    }
-
-    .form-box h1 {
-        text-align: center;
-        font-size: 36px;
-    }
-
-
-    .left {
-        width: 35%;
-    }
-
-    .left h2 {
-        font-size: 42px;
-        margin-bottom: 20px;
-    }
-
-    .left p {
-        color: #d6d6d6;
-        line-height: 1.7;
-    }
-
-    form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        padding: 18px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-
-    textarea {
-        height: 160px;
-        resize: none;
-    }
-
-    button {
-        width: 220px;
-        padding: 18px;
-        border: none;
-        background: #D8B36A;
-        color: #061d38;
-        border-radius: 50px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
     /* ===== FAQ ===== */
     .faq-item {
         border-bottom: 1px solid #F5D390;
         margin-bottom: 10px;
+        color: #FFFFFF;
     }
 
     .faq-item h3 {
@@ -842,15 +774,19 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     }
 
     .case h3 {
+        margin: 0 0 20px 0;
+        font-size: 20px;
         color: #021631;
     }
 
     .case p {
+        font-size: 13px;
+        margin-bottom: 30px;
         color: #021631;
     }
 
     .case a {
-        color: #D8B36A;
+        color: #021631;
         text-decoration: none;
         font-weight: bold;
     }
@@ -872,451 +808,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         opacity: 1;
     }
 
-    /* ===== Footer ===== */
-    footer {
-        background: #061d38;
-        padding: 60px 0 30px;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 60px;
-    }
-
-    .footer h3 {
-        margin-bottom: 20px;
-    }
-
-    .footer a {
-        color: #ddd;
-        text-decoration: none;
-        line-height: 2;
-    }
-
-    .footer p {
-        color: #ddd;
-        line-height: 2;
-    }
-
-    hr {
-        margin: 40px 0;
-        border: none;
-        border-top: 1px solid rgba(255, 255, 255, .15);
-    }
-
-    .copy {
-        text-align: center;
-        color: #aaa;
-    }
-
-    /* ===== Contact Form ===== */
-    .contact-form {
-        padding: 90px 0;
-    }
-
-    .contact-form .container {
-        display: flex;
-        justify-content: center;
-        /* центрируем form-box по горизонтали */
-    }
-
-    .contact-form .form-box {
-        width: 100%;
-        /* ширина 90% от контейнера */
-        /* ограничим, чтобы на больших экранах не расползалось */
-
-        /* лёгкий полупрозрачный фон (опционально) */
-        border-radius: 24px;
-        /* скругление блока */
-        padding: 40px 30px;
-        /* внутренние отступы */
-        box-sizing: border-box;
-    }
-
-    .contact-form form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        /* расстояние между полями */
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        height: 63px;
-        padding: 18px 20px;
-        border: none;
-        border-radius: 50px;
-        /* круглые края у полей */
-        font-size: 13px;
-        background: #DDD2BF;
-        color: #505152;
-        box-sizing: border-box;
-        outline: none;
-    }
-
-    .contact-form textarea {
-        border-radius: 24px;
-        /* для textarea можно чуть меньше, но тоже скруглено */
-        height: 163px;
-        resize: vertical;
-    }
-
-    .contact-form button {
-        margin-top: 20px;
-        width: 262px;
-        padding: 15px;
-        border: none;
-        background: #F5D390;
-        color: #021631;
-        border-radius: 50px;
-        font-weight: bold;
-        font-size: 16px;
-        cursor: pointer;
-        align-self: center;
-        /* кнопка по центру */
-        transition: background 0.3s;
-    }
-
-    .contact-form button:hover {
-        background: #c9a45a;
-    }
-
-
-    .contacts .container {
-        height: 206px;
-        border-radius: 17px;
-        background-color: #F4EDE0;
-    }
-
-    .contacts-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* три равные колонки */
-        gap: 30px;
-        align-items: center;
-        /* вертикальное выравнивание */
-    }
-
-    .contacts-col h3 {
-        font-size: 28px;
-        font-weight: 700;
-        margin: 0;
-        line-height: 1.3;
-        color: #D8B36A;
-        /* золотой акцент */
-    }
-
-    .contacts-col h1 {
-        font-family: Playfair Display;
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 36px;
-        leading-trim: NONE;
-        line-height: 42px;
-        letter-spacing: 0%;
-    }
-
-    .contacts-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 12px;
-        font-size: 18px;
-    }
-
-    .contacts-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .contacts-icon {
-        font-size: 26px;
-        line-height: 1;
-        flex-shrink: 0;
-    }
-
-    .contacts-item a {
-        font-size: 16px;
-        color: #021631;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .contacts-item a:hover {
-        color: #D8B36A;
-    }
-
-    .contacts-item div {
-        line-height: 1.6;
-    }
-
-    /* Адаптивность для маленьких экранов */
-    @media (max-width: 768px) {
-        .contacts-grid {
-            grid-template-columns: 1fr;
-            /* одна колонка на мобилках */
-            text-align: center;
-        }
-
-        .contacts-item {
-            justify-content: center;
-        }
-    }
-
-
-
-    .contacts-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        align-items: center;
-    }
-
-    /* Вертикальные перегородки между колонками */
-    .contacts-col {
-        color: #021631;
-        padding: 10px 0;
-    }
-
-    /* У всех колонок, кроме последней, добавляем правую границу */
-    .contacts-col:not(:last-child) {
-        border-right: 1px solid #CA9928;
-        /* полупрозрачная белая */
-        padding-right: 30px;
-        /* отступ от перегородки */
-    }
-
-    .contacts-col h3 {
-        font-size: 28px;
-        font-weight: 700;
-        margin: 0;
-        line-height: 1.3;
-        color: #D8B36A;
-    }
-
-    .contacts-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 12px;
-        font-size: 18px;
-    }
-
-    .contacts-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .contacts-icon {
-        font-size: 26px;
-        line-height: 1;
-        flex-shrink: 0;
-    }
-
-    .contacts-item div {
-        line-height: 1.6;
-    }
-
-    /* Адаптив – на планшетах и телефонах убираем перегородки */
-    @media (max-width: 768px) {
-        .contacts-grid {
-            grid-template-columns: 1fr;
-            /* одна колонка */
-            gap: 20px;
-            text-align: center;
-        }
-
-        .contacts-col:not(:last-child) {
-            border-right: none;
-            /* убираем перегородки */
-            padding-right: 0;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #CA9928;
-            /* можно добавить горизонтальную черту */
-        }
-
-        .contacts-item {
-            justify-content: center;
-        }
-    }
-
-    .partners h2 {
-        text-align: center;
-        color: #061d38;
-        margin-bottom: 50px;
-        font-size: 42px;
-    }
-
-    .carousel {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 60px;
-        /* отступы для кнопок */
-    }
-
-    .carousel-container {
-        overflow: hidden;
-        border-radius: 12px;
-    }
-
-    .logos-wrapper {
-        display: flex;
-        transition: transform 0.5s ease;
-        gap: 20px;
-        /* отступ между логотипами */
-    }
-
-    .logos-wrapper img {
-        flex: 0 0 calc((100% - 40px) / 3);
-        /* три элемента в ряд, с учётом gap */
-        max-width: 100%;
-        height: auto;
-        padding: 20px;
-        object-fit: contain;
-        max-height: 120px;
-        transition: transform 0.3s;
-    }
-
-    .logos-wrapper img:hover {
-        transform: scale(1.03);
-    }
-
-    /* Кнопки навигации */
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 44px;
-        height: 44px;
-        background: #D8B36A;
-        color: #061d38;
-        border: none;
-        border-radius: 50%;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s, transform 0.2s;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .carousel-btn:hover {
-        background: #c9a45a;
-        transform: translateY(-50%) scale(1.05);
-    }
-
-    .carousel-btn:active {
-        transform: translateY(-50%) scale(0.95);
-    }
-
-    .prev-btn {
-        left: 0;
-    }
-
-    .next-btn {
-        right: 0;
-    }
-
-    /* Адаптив – показываем по 2 логотипа на планшетах, по 1 на телефонах */
-    @media (max-width: 992px) {
-        .logos-wrapper img {
-            flex: 0 0 calc((100% - 20px) / 2);
-        }
-    }
-
-    @media (max-width: 600px) {
-        .carousel {
-            padding: 0 40px;
-        }
-
-        .logos-wrapper img {
-            flex: 0 0 100%;
-        }
-
-        .carousel-btn {
-            width: 36px;
-            height: 36px;
-            font-size: 20px;
-        }
-    }
-
-    /* Кнопки навигации */
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 48px;
-        height: 48px;
-        background: #D8B36A;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .carousel-btn:hover {
-        background: #c9a45a;
-        transform: translateY(-50%) scale(1.05);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    }
-
-    .carousel-btn:active {
-        transform: translateY(-50%) scale(0.95);
-    }
-
-    /* Левая кнопка – иконка повёрнута на 180° (смотрит влево) */
-    .prev-btn .arrow-icon {
-        transform: rotate(90deg);
-    }
-
-    /* Правая кнопка – без поворота (смотрит вправо) */
-    .next-btn .arrow-icon {
-        transform: rotate(0deg);
-    }
-
-    /* Общие стили для иконок внутри кнопок */
-    .arrow-icon {
-        width: 28px;
-        height: 28px;
-        display: block;
-        transition: transform 0.3s ease;
-        filter: brightness(0) invert(1);
-        /* если иконка цветная, уберите эту строку */
-    }
-
-    /* При наведении на кнопку – иконка чуть увеличивается */
-    .carousel-btn:hover .arrow-icon {
-        transform: scale(1.1);
-    }
-
-    /* Для левой кнопки при наведении – чтобы не перебить поворот */
-    .prev-btn:hover .arrow-icon {
-        transform: rotate(180deg) scale(1.1);
-    }
-
-    .next-btn:hover .arrow-icon {
-        transform: rotate(0deg) scale(1.1);
-    }
-
-    /* Размещение кнопок */
-    .prev-btn {
-        left: 0;
-    }
-
-    .next-btn {
-        right: 0;
-    }
-
-    /* ===== Partners Carousel ===== */
+    /* ===== Partners (карусель) ===== */
     .partners {
         padding: 10px 0 60px 0;
         background: #F4EDE0;
@@ -1362,14 +854,10 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         transform: scale(1.03);
     }
 
-    /* Кнопки навигации */
     .carousel-btn {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 48px;
-        height: 48px;
-        background: #D8B36A;
         border: none;
         border-radius: 50%;
         cursor: pointer;
@@ -1377,55 +865,15 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .carousel-btn:hover {
-        background: #c9a45a;
-        transform: translateY(-50%) scale(1.05);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        background-color: #F4EDE0;
+        background: transparent;
+        background-color: transparent;
     }
 
     .carousel-btn:active {
         transform: translateY(-50%) scale(0.95);
     }
 
-    /* Левая кнопка – иконка повёрнута на 180° (смотрит влево) */
-    .prev-btn .arrow-icon {
-        transform: rotate(180deg);
-    }
-
-    /* Правая кнопка – без поворота (смотрит вправо) */
-    .next-btn .arrow-icon {
-        transform: rotate(0deg);
-    }
-
-    /* Общие стили для иконок внутри кнопок */
-    .arrow-icon {
-        width: 28px;
-        height: 28px;
-        display: block;
-        transition: transform 0.3s ease;
-        filter: brightness(0) invert(1);
-        /* если иконка цветная, уберите эту строку */
-    }
-
-    /* При наведении на кнопку – иконка чуть увеличивается, поворот сохраняется */
-    .carousel-btn:hover .arrow-icon {
-        transform: scale(1.1);
-    }
-
-    /* Для левой кнопки при наведении – сохраняем rotate(180deg) и добавляем scale */
-    .prev-btn:hover .arrow-icon {
-        transform: rotate(180deg) scale(1.1);
-    }
-
-    .next-btn:hover .arrow-icon {
-        transform: rotate(0deg) scale(1.1);
-    }
-
-    /* Размещение кнопок */
     .prev-btn {
         left: 0;
     }
@@ -1434,7 +882,16 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         right: 0;
     }
 
-    /* Адаптив */
+    .prev-btn .arrow-icon {
+        transform: rotate(180deg);
+    }
+
+    .next-btn .arrow-icon {
+        transform: rotate(0deg);
+    }
+
+
+    /* Адаптив карусели */
     @media (max-width: 992px) {
         .logos-wrapper img {
             flex: 0 0 calc((100% - 20px) / 2);
@@ -1450,15 +907,263 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             flex: 0 0 100%;
         }
 
-        .carousel-btn {
-            width: 36px;
-            height: 36px;
-        }
-
         .arrow-icon {
             width: 20px;
             height: 20px;
         }
+    }
+
+    /* ===== Contact Form (единый блок) ===== */
+    .contact-form {
+        padding: 90px 0;
+    }
+
+    .contact-form .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-form .form-box {
+        width: 100%;
+        background-color: #F4EDE0;
+        border-radius: 24px;
+        padding: 40px 30px;
+        box-sizing: border-box;
+    }
+
+    .contact-form .form-box h1 {
+        text-align: center;
+        font-size: 36px;
+        color: black;
+    }
+
+    .contact-form .form-box p {
+        color: #A1A4A8;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        height: 63px;
+        padding: 18px 20px;
+        border: none;
+        border-radius: 50px;
+        font-size: 13px;
+        background: #DDD2BF;
+        color: #505152;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .contact-form textarea {
+        border-radius: 24px;
+        height: 163px;
+        resize: vertical;
+    }
+
+    .contact-form button {
+        margin-top: 20px;
+        width: 262px;
+        padding: 15px;
+        border: none;
+        background: #F5D390;
+        color: #021631;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        align-self: center;
+        transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+        background: #c9a45a;
+    }
+
+    /* ===== Contacts (блок с контактами) ===== */
+    .contacts .container {
+        height: 206px;
+        border-radius: 17px;
+        background-color: #F4EDE0;
+    }
+
+    .contacts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: center;
+    }
+
+    .contacts-col {
+        color: #021631;
+        padding: 10px 0;
+    }
+
+    .contacts-col:not(:last-child) {
+        border-right: 1px solid #CA9928;
+        padding-right: 30px;
+    }
+
+    .contacts-col h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.3;
+        color: #D8B36A;
+    }
+
+    .contacts-col h1 {
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0%;
+    }
+
+    .contacts-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .contacts-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .contacts-icon {
+        font-size: 26px;
+        line-height: 1;
+        flex-shrink: 0;
+    }
+
+    .contacts-item a {
+        font-size: 16px;
+        color: #021631;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .contacts-item a:hover {
+        color: #D8B36A;
+    }
+
+    .contacts-item div {
+        line-height: 1.6;
+    }
+
+    /* Адаптив для контактов */
+    @media (max-width: 768px) {
+        .contacts-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .contacts-col:not(:last-child) {
+            border-right: none;
+            padding-right: 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #CA9928;
+        }
+
+        .contacts-item {
+            justify-content: center;
+        }
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        background: #061d38;
+        padding: 60px 0 30px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 60px;
+    }
+
+    .footer h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer a {
+        color: #ddd;
+        text-decoration: none;
+        line-height: 2;
+    }
+
+    .footer p {
+        color: #ddd;
+        line-height: 2;
+    }
+
+    hr {
+        margin: 40px 0;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .principal {
+        background-color: #061d38;
+        position: relative;
+        z-index: 0;
+    }
+
+    .principal::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('<?= SITE_TEMPLATE_PATH ?>/images/lustovka.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.09;
+        mix-blend-mode: overlay;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .principal .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img {
+        position: relative;
+        width: 40%;
+        text-align: right;
+    }
+
+    .hero-img img {
+        max-width: 900px;
+        /* увеличенный размер */
+        width: 100%;
+        display: block;
+    }
+
+    .hero-img::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%;
+        background: linear-gradient(to top, #061d38 0%, transparent 100%);
+        pointer-events: none;
+        z-index: 1;
     }
 </style>
 <script>
@@ -1468,15 +1173,13 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         const header = item.querySelector('h3');
 
         header.addEventListener('click', function() {
-            // Переключаем класс active у родительского .faq-item
             item.classList.toggle('active');
 
-            // Меняем текст иконки вручную (если не хотим полагаться на CSS)
             const toggle = item.querySelector('.faq-toggle');
             if (item.classList.contains('active')) {
-                toggle.textContent = '−'; // минус
+                toggle.textContent = '−';
             } else {
-                toggle.textContent = '+'; // плюс
+                toggle.textContent = '+';
             }
         });
     });
@@ -1498,7 +1201,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         let slidesPerView = 3;
         let autoPlayInterval;
 
-        // Определяем количество видимых слайдов в зависимости от ширины экрана
         function getSlidesPerView() {
             if (window.innerWidth <= 600) return 1;
             if (window.innerWidth <= 992) return 2;
@@ -1519,7 +1221,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             if (currentIndex < maxIndex) {
                 currentIndex++;
             } else {
-                currentIndex = 0; // зацикливание
+                currentIndex = 0;
             }
             updateCarousel();
         }
@@ -1534,7 +1236,6 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             updateCarousel();
         }
 
-        // Кнопки
         document.querySelector('.next-btn').addEventListener('click', function() {
             clearInterval(autoPlayInterval);
             nextSlide();
@@ -1547,20 +1248,17 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             startAutoPlay();
         });
 
-        // Автопрокрутка
         function startAutoPlay() {
             clearInterval(autoPlayInterval);
             autoPlayInterval = setInterval(nextSlide, 3000);
         }
 
-        // Пересчёт при ресайзе
         let resizeTimeout;
         window.addEventListener('resize', function() {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(() => {
                 const newSlidesPer = getSlidesPerView();
                 if (newSlidesPer !== slidesPerView) {
-                    // Если количество видимых изменилось, корректируем индекс
                     const maxIndex = Math.max(0, totalSlides - newSlidesPer);
                     if (currentIndex > maxIndex) {
                         currentIndex = maxIndex;
@@ -1570,13 +1268,11 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             }, 200);
         });
 
-        // Инициализация
         slidesPerView = getSlidesPerView();
         currentIndex = 0;
         updateCarousel();
         startAutoPlay();
 
-        // Остановка автопрокрутки при наведении на карусель
         const carouselContainer = document.querySelector('.carousel-container');
         carouselContainer.addEventListener('mouseenter', function() {
             clearInterval(autoPlayInterval);

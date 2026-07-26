@@ -238,6 +238,46 @@
             justify-content: center;
         }
     }
+
+    .footer-about .logo {
+        display: flex;
+        align-items: center;
+        /* логотип и текстовый блок по вертикали по центру */
+        gap: 20px;
+        /* расстояние между логотипом и текстом */
+    }
+
+    /* Контейнер с текстами – делаем вертикальную колонку и центрируем */
+    .footer-about .logo>div:last-child {
+        display: flex;
+        flex-direction: column;
+        /* тексты друг под другом */
+        align-items: center;
+        /* центрируем по горизонтали */
+        text-align: center;
+        /* на случай, если внутри ещё что-то */
+    }
+
+    .footer-about .logo-text {
+        font-size: 28px;
+        font-weight: 700;
+        color: #D8B36A;
+        letter-spacing: 1px;
+        /* убираем лишние отступы, если есть */
+    }
+
+    .footer-about .logo-sub {
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 2px;
+        /* небольшой отступ сверху, чтобы не слипалось */
+    }
+
+    .footer-about .logo img {
+        display: block;
+        margin: 0 auto;
+        width: 57px;
+    }
 </style>
 </body>
 
