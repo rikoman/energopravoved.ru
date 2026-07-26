@@ -184,9 +184,14 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             <h2>
                 «Принципы компании - это те принципы, которых я придерживаюсь во всём»
             </h2>
+
         </div>
 
+
     </div>
+    <div style="display:flex;flex-direction: column;justify-content: center;align-items: center;"><a style="margin-top: 50px;" href="#contacts" class="elda">
+            Подробнее о компании
+        </a></div>
 </section>
 <section class="price" id="price">
     <div class="container">
@@ -235,6 +240,9 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 </div>
             </div>
         </div>
+        <a style="margin-top: 50px;" href="#contacts" class="elda">
+            Подробнее об услугах
+        </a>
     </div>
 </section>
 
