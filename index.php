@@ -24,49 +24,49 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/light.svg" alt="">
                 <h3>Технологическое присоединение</h3>
                 <p>Подключение объектов к электрическим сетям любой сложности.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/money.svg" alt="">
                 <h3>Споры по начислениям</h3>
                 <p>Оспаривание необоснованных начислений и задолженности.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/file.svg" alt="">
                 <h3>Экспертиза документов</h3>
                 <p>Проверка договоров, технических условий и актов.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/contract.svg" alt="">
                 <h3>Юридическое сопровождение</h3>
                 <p>Комплексная правовая поддержка организаций.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/law.svg" alt="">
                 <h3>Представительство в суде</h3>
                 <p>Подготовка документов и защита интересов клиента.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/edit.svg" alt="">
                 <h3>Жалобы и заявления</h3>
                 <p>Подготовка документов для любых государственных органов.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/search.svg" alt="">
                 <h3>Судебная экспертиза</h3>
                 <p>Подготовка экспертных заключений по энергетическим вопросам.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
             <div class="card">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/doc.svg" alt="">
                 <h3>Договорная работа</h3>
                 <p>Разработка и анализ договоров любой сложности.</p>
-                <a href="#">Подробнее →</a>
+                <a href="#">Подробнее</a>
             </div>
         </div>
     </div>
