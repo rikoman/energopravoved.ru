@@ -13,12 +13,6 @@ body {
   max-width: 1335px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* ===== Header ===== */
-header {
-  padding: 25px 0;
 }
 
 .top {
@@ -66,10 +60,12 @@ nav a:hover {
 .hero-box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
+.hero-box{
+  margin-top: 50px;
+}
 .hero-text h1 {
+  margin-top: 
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 70.65px;
@@ -96,11 +92,7 @@ nav a:hover {
   line-height: 100%;
   color: #ffffff;
   margin-bottom: 30px;
-}
-
-.hero-img img {
-  max-width: 420px;
-  width: 100%;
+  width: 80%;
 }
 
 .elda {
@@ -115,7 +107,10 @@ nav a:hover {
 
 /* ===== Services ===== */
 .services {
-  padding: 80px 0;
+  margin-top: 100px;
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 0 0;
 }
 
 .cards {
@@ -194,16 +189,17 @@ nav a:hover {
 }
 
 .principal-item h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 
 .principal-item p {
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .index-h1 {
+  margin: 20px 0 40px 0;
   font-family: "Playfair Display";
   font-size: 36px;
   background: linear-gradient(91.43deg, #f8d797 3.9%, #c6941f 96.1%);
@@ -430,6 +426,7 @@ nav a:hover {
 }
 
 .partners h2 {
+  margin: 50px 0 0 0;
   text-align: center;
   color: #061d38;
   margin-bottom: 50px;
@@ -438,7 +435,7 @@ nav a:hover {
 
 .carousel {
   position: relative;
-  max-width: 1200px;
+  max-width: 1334px;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -734,22 +731,10 @@ hr {
 }
 
 .hero-img img {
-  max-width: 900px;
-  /* увеличенный размер */
-  width: 100%;
   display: block;
-}
-
-.hero-img::after {
-  content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 35%;
-  background: linear-gradient(to top, #061d38 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 1;
+  top: -240px;
+  left: -370px;
 }
 
 .faq h1 {
@@ -769,4 +754,21 @@ hr {
 
 .faq-item.active .faq-toggle {
   transform: rotate(45deg);
+}
+
+.hero-img img {
+  mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 50%,
+    black 60%,
+    black 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 50%,
+    black 60%,
+    black 100%
+  );
 }
