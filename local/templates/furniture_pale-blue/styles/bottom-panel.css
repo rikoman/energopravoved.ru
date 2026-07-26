@@ -1,0 +1,167 @@
+/* ===== Универсальный блок (bottom-block) ===== */
+.bottom-block {
+  background: #061d38;
+  padding: 60px 0 30px;
+  color: white;
+}
+
+.bottom-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Логотип */
+.bottom-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-logo img {
+  display: block;
+  width: 57px;
+  height: auto;
+}
+
+.bottom-logo > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d8b36a;
+  letter-spacing: 1px;
+}
+
+.bottom-logo-sub {
+  font-size: 14px;
+  color: #e4bd6a;
+  margin-top: 2px;
+}
+
+/* Меню */
+.bottom-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 13px;
+}
+
+.bottom-menu li a:hover {
+  color: #d8b36a;
+}
+
+/* Контакты */
+.bottom-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-contacts-left,
+.bottom-contacts-right {
+  flex: 1 1 auto;
+}
+
+.bottom-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.bottom-contact-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.bottom-contact-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 13px;
+}
+
+.bottom-contact-item a:hover {
+  color: #d8b36a;
+}
+
+.bottom-contact-item span {
+  color: white;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+/* Социальные сети */
+.bottom-social {
+  display: flex;
+  gap: 10px;
+}
+
+.bottom-social-link {
+  display: inline-block;
+  /* если нужно – добавьте стили */
+}
+
+/* Адаптив */
+@media (max-width: 992px) {
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .bottom-about {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .bottom-about .bottom-logo {
+    justify-content: center;
+  }
+
+  .bottom-contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bottom-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bottom-logo {
+    justify-content: center;
+  }
+
+  .bottom-menu {
+    justify-content: center;
+  }
+
+  .bottom-contacts {
+    align-items: center;
+  }
+
+  .bottom-social {
+    justify-content: center;
+  }
+}
