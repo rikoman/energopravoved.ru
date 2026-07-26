@@ -173,7 +173,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 
 <section class="quote">
     <div class="container" style="display: flex;">
-        <div>
+        <div style="width: 30%;">
             <img style="width: 174;height: 173.36727905273438;angle: 0 deg;opacity: 1;top: 2320px;left: 120px;border-radius: 50%;
 " src="<?= SITE_TEMPLATE_PATH ?>/images/borov.png" alt="">
             <p>
@@ -270,14 +270,20 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 <div class="contacts-item">
                     <a href="mailto:info@energopravoved.ru">info@energopravoved.ru</a>
                 </div>
+                <div class="bottom-col bottom-social-block">
+                    <div class="bottom-social">
+                        <a href="#" class="bottom-social-link"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/darktg.svg" alt=""></a>
+                        <a href="#" class="bottom-social-link"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/darkvk.svg" alt=""></a>
+                        <a href="#" class="bottom-social-link"><img src="<?= SITE_TEMPLATE_PATH ?>/images/icons/max.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
 
             <!-- Колонка 3: График работы -->
             <div class="contacts-col">
                 <div class="contacts-item">
-                    <span class="contacts-icon">🕐</span>
                     <div>
-                        <strong>График работы:</strong><br>
+                        <strong>График работы:</strong><br><br>
                         С понедельника по пятницу<br>
                         с 09:00 – 18:00
                     </div>
