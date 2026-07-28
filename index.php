@@ -541,6 +541,9 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(toggleMode, 150);
         });
+        window.addEventListener('load', () => {
+            toggleMode();
+        });
 
         // Инициализация
         toggleMode();

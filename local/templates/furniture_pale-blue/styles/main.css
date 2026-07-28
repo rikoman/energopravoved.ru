@@ -635,6 +635,64 @@ nav a:hover {
     display: none !important;
   }
 }
+/* ----- доработки для очень узких экранов (≤ 400px) ----- */
+@media (max-width: 400px) {
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+  .carousel-btn--prev {
+    left: 6px;
+  }
+  .carousel-btn--next {
+    right: 6px;
+  }
+  .progress-bar-wrapper {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .progress-track {
+    flex: 1; /* растягиваем на всю ширину */
+    min-width: 0;
+  }
+  .case h3 {
+    font-size: 16px;
+  }
+  .case p {
+    font-size: 12px;
+  }
+}
+/* Фикс для мобильных экранов, где карточки начинают обрезаться */
+@media (max-width: 530px) {
+  .carousel-slide {
+    min-width: 0; /* разрешаем сжатие меньше контента */
+    padding: 0 6px;
+  }
+  .case {
+    padding: 18px 15px; /* уменьшаем внутренние отступы */
+    min-height: auto;
+  }
+  .case h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .case p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .carousel-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+  }
+  .carousel-btn--prev {
+    left: 4px;
+  }
+  .carousel-btn--next {
+    right: 4px;
+  }
+}
 
 .logos {
   display: flex;
