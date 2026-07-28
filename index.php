@@ -83,6 +83,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 <div>
                     <h3>Детальный анализ</h3>
                     <p>Мы не делаем поспешных выводов. Любая проблема с энергоснабжением начинается с тщательного изучения документов, цифр в квитанциях и обстоятельств дела, чтобы найти скрытые несоответствия и слабые места в позиции оппонента</p>
+                    <a href="#" class="read-more-link">Подробнее</a>
                 </div>
             </div>
             <div class="principal-item">
@@ -92,6 +93,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 <div>
                     <h3>Прозрачность и честность</h3>
                     <p>Мы открыто говорим о перспективах дела, возможных сложностях и реальной стоимости услуг. Вы всегда знаете, за что платите и какой результат можем гарантировать</p>
+                    <a href="#" class="read-more-link">Подробнее</a>
                 </div>
             </div>
             <div class="principal-item">
@@ -292,8 +294,12 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 <div class="contacts-item">
                     <div>
                         <strong>График работы:</strong><br><br>
-                        С понедельника по пятницу<br>
-                        с 09:00 – 18:00
+                        <div class="schedule-full"> С понедельника по пятницу<br>
+                            с 09:00 – 18:00</div>
+                        <div class="schedule-short">
+                            ПН-ПТ 09:00 - 18:00
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -335,33 +341,217 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
 <section class="cases" id="cases">
     <div class="container">
         <h1 class="index-h1">КЕЙСЫ</h1>
-        <div class="case-grid">
-            <div class="case">
 
-                <h3>Подключение промышленного объекта</h3>
-                <p>Успешное сопровождение процедуры сопровождение процедуры сопровождение процедуры сопровождение процедуры сопровождение процедуры процедуры технологического присоединения.</p>
-                <a href="#">Подробнее</a>
+        <div class="carousel-wrapper" id="carouselWrapper">
+            <div class="carousel-track" id="track">
+                <!-- повторяем карточки 8 раз для наглядности -->
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Подключение промышленного объекта</h3>
+                        <p>Успешное сопровождение процедуры технологического присоединения.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Подключение промышленного объекта</h3>
+                        <p>Успешное сопровождение процедуры технологического присоединения.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Выигран судебный спор</h3>
+                        <p>Снижение необоснованных начислений энергоснабжающей компании.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Подготовка договоров</h3>
+                        <p>Комплексное юридическое сопровождение предприятия.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Подготовка договоров</h3>
+                        <p>Комплексное юридическое сопровождение предприятия.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Энергоаудит</h3>
+                        <p>Проведение энергетического обследования с выдачей рекомендаций.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Сопровождение тендеров</h3>
+                        <p>Полное юридическое и техническое сопровождение участия в тендерах.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Претензионная работа</h3>
+                        <p>Досудебное урегулирование споров с поставщиками энергии.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="case">
+                        <h3>Регистрация прав</h3>
+                        <p>Оформление прав на земельные участки и объекты недвижимости.</p><a href="#">Подробнее</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="case">
+            <button class="carousel-btn carousel-btn--prev" id="prevBtn">‹</button>
+            <button class="carousel-btn carousel-btn--next" id="nextBtn">›</button>
+        </div>
 
-                <h3>Подключение промышленного объекта</h3>
-                <p>Успешное сопровождение процедуры сопровождение процедуры сопровождение процедуры сопровождение процедуры сопровождение процедуры процедуры технологического присоединения.</p>
-                <a href="#">Подробнее</a>
+        <div class="progress-bar-wrapper" id="progressWrapper">
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
             </div>
-            <div class="case">
-                <h3>Выигран судебный спор</h3>
-                <p>Снижение необоснованных начислений энергоснабжающей компании.</p>
-                <a href="#">Подробнее</a>
-            </div>
-            <div class="case">
-                <h3>Подготовка договоров</h3>
-                <p>Комплексное юридическое сопровождение предприятия.</p>
-                <a href="#">Подробнее</a>
-            </div>
+            <span class="progress-label" id="progressLabel">1 / 1</span>
         </div>
     </div>
 </section>
+<script>
+    (function() {
+        const track = document.getElementById('track');
+        const slides = track.querySelectorAll('.carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const progressFill = document.getElementById('progressFill');
+        const progressLabel = document.getElementById('progressLabel');
+        const wrapper = document.getElementById('carouselWrapper');
+
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        let isCarouselMode = false;
+
+        // Определяет, сколько карточек помещается в видимой области (с учётом погрешности)
+        function getVisibleCount() {
+            if (!isCarouselMode) return totalSlides;
+            const wrapperWidth = wrapper.clientWidth;
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            // Вычисляем точное количество, которое помещается
+            let visible = Math.floor(wrapperWidth / slideWidth);
+            // Корректировка, если остаток слишком мал (чтобы не было недобора)
+            if (wrapperWidth / slideWidth - visible > 0.9) visible++; // если почти целое
+            return Math.min(totalSlides, Math.max(1, visible));
+        }
+
+        function updateCarousel() {
+            if (!isCarouselMode) {
+                track.style.transform = 'translateX(0)';
+                return;
+            }
+
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const wrapperWidth = wrapper.clientWidth;
+            // Точное число слайдов, которое могло бы поместиться (дробное)
+            const exactVisible = wrapperWidth / slideWidth;
+            // Округляем вверх, чтобы гарантировать, что последний слайд будет виден целиком
+            const visibleCount = Math.ceil(exactVisible);
+            // Максимальный индекс, при котором последний слайд не выходит за правый край
+            let maxIndex = Math.floor(totalSlides - visibleCount);
+            // Дополнительная проверка: если при таком индексе всё равно есть пустота, уменьшаем
+            if (maxIndex >= 0) {
+                const maxOffset = maxIndex * slideWidth;
+                if (maxOffset + wrapperWidth > totalSlides * slideWidth + 0.5) {
+                    maxIndex--;
+                }
+            }
+            maxIndex = Math.max(0, maxIndex);
+
+            // Корректируем текущий индекс
+            currentIndex = Math.min(currentIndex, maxIndex);
+            currentIndex = Math.max(currentIndex, 0);
+
+            // Применяем сдвиг (по одной карточке)
+            const offset = -currentIndex * slideWidth;
+            track.style.transform = `translateX(${offset}px)`;
+
+            // Шкала прогресса (0..100%)
+            const progress = maxIndex === 0 ? 0 : (currentIndex / maxIndex) * 100;
+            progressFill.style.width = progress + '%';
+            progressLabel.textContent = `${currentIndex + 1} / ${maxIndex + 1}`;
+
+            // Состояние кнопок
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= maxIndex;
+        }
+
+        // Переключение режима (карусель / грид) в зависимости от ширины
+        function toggleMode() {
+            const width = window.innerWidth;
+            const newMode = width < 1024;
+
+            if (newMode !== isCarouselMode) {
+                isCarouselMode = newMode;
+                if (isCarouselMode) {
+                    prevBtn.style.display = 'flex';
+                    nextBtn.style.display = 'flex';
+                    document.getElementById('progressWrapper').style.display = 'flex';
+                    currentIndex = 0;
+                    updateCarousel();
+                } else {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                    document.getElementById('progressWrapper').style.display = 'none';
+                    track.style.transform = 'translateX(0)';
+                }
+            } else if (isCarouselMode) {
+                updateCarousel(); // пересчёт при ресайзе
+            }
+        }
+
+        // Обработчики кнопок (перелистывание по 1 карточке)
+        prevBtn.addEventListener('click', () => {
+            if (!isCarouselMode) return;
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (!isCarouselMode) return;
+            // Получаем актуальный maxIndex через вызов updateCarousel (или вычисляем сами)
+            // Для надёжности пересчитаем maxIndex
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const wrapperWidth = wrapper.clientWidth;
+            const exactVisible = wrapperWidth / slideWidth;
+            const visibleCount = Math.ceil(exactVisible);
+            let maxIndex = Math.floor(totalSlides - visibleCount);
+            if (maxIndex >= 0) {
+                const maxOffset = maxIndex * slideWidth;
+                if (maxOffset + wrapperWidth > totalSlides * slideWidth + 0.5) {
+                    maxIndex--;
+                }
+            }
+            maxIndex = Math.max(0, maxIndex);
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+
+        // Ресайз
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(toggleMode, 150);
+        });
+
+        // Инициализация
+        toggleMode();
+
+        // Клавиатура
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prevBtn.click();
+            if (e.key === 'ArrowRight') nextBtn.click();
+        });
+    })();
+</script>
 
 <section class="partners">
     <div class="container">
@@ -386,5 +576,4 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         </div>
     </div>
 </section>
-
 </p><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
