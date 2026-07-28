@@ -153,6 +153,95 @@ nav a:hover {
   font-weight: bold;
   margin-top: auto;
 }
+/* Планшеты и небольшие ноутбуки — 3 колонки */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Мобильные устройства — 2 колонки */
+@media (max-width: 768px) {
+  .services {
+    margin-top: 50px;
+    padding: 10px 0 0 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .card img {
+    width: 32px;
+    margin-bottom: 12px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .card a {
+    font-size: 13px;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) — оставляем 2 колонки, но уменьшаем отступы */
+@media (max-width: 480px) {
+  .card {
+    padding: 12px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card img {
+    width: 28px;
+  }
+}
+
+.card img {
+  width: 64px; /* было 48px */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .card img {
+    width: 56px; /* добавить этот блок, т.к. раньше не было */
+    margin-bottom: 16px; /* можно подкорректировать отступ */
+  }
+}
+
+@media (max-width: 768px) {
+  .card img {
+    width: 48px; /* было 32px */
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    width: 36px; /* было 28px */
+  }
+}
 
 /* ===== Principal ===== */
 .principal {
