@@ -340,7 +340,56 @@ nav a:hover {
   font-style: italic;
   margin: 0;
 }
+/* ===== Адаптив ===== */
 
+/* Планшеты и маленькие десктопы */
+@media (max-width: 1024px) {
+  .quote__text h2 {
+    font-size: 32px;
+  }
+  .quote__author img {
+    width: 140px;
+    height: 140px;
+  }
+}
+.mobile-text-quote {
+  display: none;
+}
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  .quote .container > div:last-child h2 {
+    font-size: 30px;
+  }
+  .quote .container > div:first-child img {
+    width: 104px;
+    height: 103px;
+  }
+  .quote .container > div:first-child p {
+    font-size: 13px;
+  }
+  .desktop-text-quote {
+    display: none;
+  }
+  .mobile-text-quote {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .quote .container > div:last-child h2 {
+    font-size: 16px;
+  }
+  .quote .container > div:first-child img {
+    width: 67px;
+    height: 67px;
+  }
+  .quote .container p {
+    font-size: 10px;
+  }
+}
 /* ===== Price (аккордеон) ===== */
 .price {
   padding: 90px 0;

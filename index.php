@@ -178,7 +178,7 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
         <div style="width: 30%;">
             <img style="width: 174;height: 173.36727905273438;angle: 0 deg;opacity: 1;top: 2320px;left: 120px;border-radius: 50%;
 " src="<?= SITE_TEMPLATE_PATH ?>/images/borov.png" alt="">
-            <p>
+            <p class="desktop-text-quote">
                 Руководитель компании <br> Коваленко Илья Андреевич
             </p>
         </div>
@@ -186,7 +186,9 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             <h2>
                 «Принципы компании - это те принципы, которых я придерживаюсь во всём»
             </h2>
-
+            <p class="mobile-text-quote">
+                Руководитель компании <br> Коваленко Илья Андреевич
+            </p>
         </div>
 
 
