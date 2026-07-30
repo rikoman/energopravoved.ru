@@ -1,13 +1,13 @@
 /* ============================================
    Базовые стили блока (header)
 ============================================ */
-.bottom-block {
+.header-block {
   padding: 50px 0;
   color: #fff;
 }
 
 /* Сетка — на десктопе flex, на мобилках grid */
-.bottom-grid {
+.header-grid {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,30 +17,30 @@
 /* ============================================
    Логотип
 ============================================ */
-.bottom-logo {
+.header-logo {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.bottom-logo img {
+.header-logo img {
   display: block;
   width: 57px;
   height: auto;
 }
-.bottom-logo > div:last-child {
+.header-logo > div:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.bottom-logo-text {
+.header-logo-text {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 24px;
   color: #d8b36a;
   letter-spacing: 1px;
 }
-.bottom-logo-sub {
+.header-logo-sub {
   font-size: 14px;
   color: #e4bd6a;
   margin-top: 2px;
@@ -49,7 +49,7 @@
 /* ============================================
    Меню (навигация)
 ============================================ */
-.bottom-menu {
+.header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -57,7 +57,7 @@
   padding: 0;
   margin: 0;
 }
-.bottom-menu li a {
+.header-menu li a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -65,7 +65,7 @@
   text-decoration: none;
   transition: color 0.3s;
 }
-.bottom-menu li a:hover {
+.header-menu li a:hover {
   color: #d8b36a;
 }
 
@@ -73,7 +73,7 @@
    Обёртка (меню + контакты + соцсети + адрес)
    На десктопе — горизонтальный ряд
 ============================================ */
-.bottom-nav-wrapper {
+.header-nav-wrapper {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -84,44 +84,44 @@
 /* ============================================
    Контакты, соцсети, адрес (внутри wrapper)
 ============================================ */
-.bottom-contacts {
+.header-contacts {
   display: flex;
   align-items: center;
 }
-.bottom-contacts-left {
+.header-contacts-left {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.bottom-contact-item {
+.header-contact-item {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
 }
-.bottom-contact-item a {
+.header-contact-item a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
-.bottom-contact-item a:hover {
+.header-contact-item a:hover {
   color: #d8b36a;
 }
-.bottom-contact-item span {
+.header-contact-item span {
   color: #fff;
   line-height: 1.5;
 }
 
-.bottom-social {
+.header-social {
   display: flex;
   gap: 10px;
 }
-.bottom-social-link img {
+.header-social-link img {
   width: 24px;
   height: 24px;
 }
 
-.bottom-address {
+.header-address {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -130,7 +130,7 @@
 /* ============================================
    Бургер-кнопка (скрыта на десктопе)
 ============================================ */
-.bottom-burger {
+.header-burger {
   display: none;
 }
 .burger-btn {
@@ -166,23 +166,23 @@
    Адаптив: планшеты и мобилки (≤ 992px)
 ============================================ */
 @media (max-width: 992px) {
-  .bottom-grid {
+  .header-grid {
     display: grid;
     grid-template-columns: 1fr auto; /* логотип | бургер */
     gap: 20px 30px;
     align-items: center;
   }
 
-  .bottom-about {
+  .header-about {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     text-align: left;
   }
-  .bottom-about .bottom-logo {
+  .header-about .header-logo {
     justify-content: flex-start;
   }
 
-  .bottom-burger {
+  .header-burger {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -190,7 +190,7 @@
     grid-row: 1 / 2;
   }
 
-  .bottom-nav-wrapper {
+  .header-nav-wrapper {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     display: none; /* скрыто по умолчанию */
@@ -200,32 +200,32 @@
     padding: 20px 0;
     width: 100%;
   }
-  .bottom-nav-wrapper.open {
+  .header-nav-wrapper.open {
     display: flex;
   }
 
   /* Все элементы внутри wrapper центрируются и идут вертикально */
-  .bottom-menu {
+  .header-menu {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
-  .bottom-contacts {
+  .header-contacts {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-  .bottom-contacts-left {
+  .header-contacts-left {
     align-items: center;
     text-align: center;
   }
 
-  .bottom-social {
+  .header-social {
     justify-content: center;
   }
 
-  .bottom-address {
+  .header-address {
     text-align: center;
   }
 }
@@ -234,14 +234,14 @@
    Адаптив: маленькие мобилки (≤ 600px)
 ============================================ */
 @media (max-width: 600px) {
-  .bottom-grid {
+  .header-grid {
     gap: 15px;
   }
-  .bottom-nav-wrapper {
+  .header-nav-wrapper {
     gap: 15px;
     padding: 15px 0;
   }
-  .bottom-menu {
+  .header-menu {
     gap: 12px;
   }
 }

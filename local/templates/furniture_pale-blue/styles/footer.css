@@ -1,0 +1,260 @@
+.footer-block {
+  padding: 50px 0;
+  color: #fff;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo img {
+  display: block;
+  width: 57px;
+  height: auto;
+}
+.footer-logo > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-logo-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #d8b36a;
+  letter-spacing: 1px;
+}
+.footer-logo-sub {
+  font-size: 14px;
+  color: #e4bd6a;
+  margin-top: 2px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-menu li a:hover {
+  color: #d8b36a;
+}
+
+.footer-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+.footer-contacts-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-contact-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+.footer-contact-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-contact-item a:hover {
+  color: #d8b36a;
+}
+.footer-contact-item span {
+  color: #fff;
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-address {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+.footer-info-row {
+  display: flex;
+  gap: 10px;
+}
+/* ========================================= */
+/* --- АДАПТИВ ПОД МОБИЛЬНЫЕ (ДО 768px) --- */
+/* ========================================= */
+@media (max-width: 768px) {
+  /* Убираем отступы контейнера по бокам, чтобы было впритык, как на скрине */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Переключаем футер в вертикальный стек */
+  .footer-grid {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  /* 1. Скрываем логотип на мобилке */
+  .footer-about {
+    display: none;
+  }
+
+  /* 2. Настраиваем меню (в одну строку от края до края) */
+  .footer-nav {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap; /* Чтобы пункты меню не ломались */
+  }
+
+  /* 3. Настраиваем 3-колоночную сетку для адреса, контактов и соцсетей */
+  .footer-info-row {
+    display: grid;
+    /* Даем первой колонке (Контакты) 1.5 части места, соцсетям - только под их размер, адресу - 1 часть */
+    grid-template-columns: 1.5fr min-content 1fr;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Адрес (слева) */
+  .footer-address {
+    display: flex;
+    align-items: center;
+  }
+  .footer-address .footer-contact-item span {
+    color: #d8b36a; /* Желтый цвет */
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /* Контакты (по центру) */
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer-contacts-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .footer-contacts .footer-contact-item a {
+    color: #d8b36a !important; /* Желтый цвет для телефона и почты */
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  /* Соцсети (справа) */
+  .footer-social-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-social {
+    display: flex;
+    gap: 8px;
+  }
+
+  /* Желтые круглые кнопки соцсетей */
+  .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d8b36a; /* Желтый фон */
+    transition: background-color 0.3s;
+  }
+  .footer-social-link:hover {
+    background-color: #fff;
+  }
+  .footer-social-link img {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0);
+  }
+
+  /* 4. Политика в самом низу */
+  .footer-policy {
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 0;
+  }
+}
+
+/* ========================================= */
+/* --- ДОП. АДАПТИВ ДЛЯ МАЛЕНЬКИХ ЭКРАНОВ (360px и меньше) --- */
+/* ========================================= */
+@media (max-width: 420px) {
+  .footer-info-row {
+    gap: 5px; /* Уменьшаем зазоры */
+  }
+
+  /* Чуть уменьшаем шрифт меню */
+  .footer-menu li a {
+    font-size: 12px;
+  }
+
+  /* Уменьшаем шрифты контактов и адреса */
+  .footer-contacts .footer-contact-item a,
+  .footer-address .footer-contact-item span {
+    font-size: 11px !important;
+    word-break: break-word; /* ВАЖНО: разрешаем длинному email переноситься на новую строку */
+  }
+
+  .footer-contacts-left {
+    gap: 2px; /* Почта и телефон почти впритык */
+  }
+}
