@@ -232,6 +232,17 @@
     color: #fff;
     margin-top: 0;
   }
+  .footer-social-link {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-social-link img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-social {
+    gap: 4px;
+  }
 }
 
 /* ========================================= */
@@ -256,5 +267,8 @@
 
   .footer-contacts-left {
     gap: 2px; /* Почта и телефон почти впритык */
+  }
+  .footer-social {
+    gap: 2px;
   }
 }

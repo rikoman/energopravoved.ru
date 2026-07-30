@@ -9,6 +9,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/footer.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/main.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/aboutus.css");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/faq-toggle.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/burger-header.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/price-accordion.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/partners-carousel.js");
 
@@ -94,25 +95,3 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/partners-carousel.js");
             </div>
         </div>
     </header>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const burger = document.querySelector('.burger-btn');
-            const navWrapper = document.querySelector('.header-nav-wrapper');
-
-            if (burger && navWrapper) {
-                burger.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    this.classList.toggle('active');
-                    navWrapper.classList.toggle('open');
-                });
-
-                // Закрываем меню при клике вне его (опционально)
-                document.addEventListener('click', function(e) {
-                    if (!burger.contains(e.target) && !navWrapper.contains(e.target)) {
-                        burger.classList.remove('active');
-                        navWrapper.classList.remove('open');
-                    }
-                });
-            }
-        });
-    </script>
