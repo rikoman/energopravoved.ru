@@ -6,6 +6,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/bottom-panel.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/main.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/styles/aboutus.css");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/faq-toggle.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/price-accordion.js");
 Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/partners-carousel.js");
