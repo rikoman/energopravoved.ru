@@ -1261,3 +1261,57 @@ hr {
     black 100%
   );
 }
+
+.read-more-link {
+  display: none;
+  color: #0073aa;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 13px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .principal-item img {
+    max-width: 50px;
+  }
+
+  .text-with-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin: 0;
+    width: 100%;
+  }
+
+  .principal-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: calc(1.7em * 1);
+    transition: max-height 0.3s ease;
+  }
+
+  .principal-text.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .read-more-link {
+    display: inline-block;
+    flex: 0 0 auto;
+    align-self: baseline;
+    margin-left: 8px;
+    white-space: nowrap;
+    margin-top: 0;
+  }
+}

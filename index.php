@@ -76,87 +76,121 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
     <div class="container">
         <h1 class="index-h1">ПРИНЦИПЫ КОМПАНИИ</h1>
         <div class="principal-grid">
+            <!-- 1 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Детальный анализ</h3>
-                    <p>Мы не делаем поспешных выводов. Любая проблема с энергоснабжением начинается с тщательного изучения документов, цифр в квитанциях и обстоятельств дела, чтобы найти скрытые несоответствия и слабые места в позиции оппонента</p>
-                    <a href="#" class="read-more-link">Подробнее</a>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы не делаем поспешных выводов. Любая проблема с энергоснабжением начинается с тщательного изучения документов, цифр в квитанциях и обстоятельств дела, чтобы найти скрытые несоответствия и слабые места в позиции оппонента</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 2 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Прозрачность и честность</h3>
-                    <p>Мы открыто говорим о перспективах дела, возможных сложностях и реальной стоимости услуг. Вы всегда знаете, за что платите и какой результат можем гарантировать</p>
-                    <a href="#" class="read-more-link">Подробнее</a>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы открыто говорим о перспективах дела, возможных сложностях и реальной стоимости услуг. Вы всегда знаете, за что платите и какой результат можем гарантировать</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 3 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Учёт рисков</h3>
-                    <p>Мы предвидим возможные негативные сценарии и действия сетевых или сбытовых компаний. Наша задача — минимизировать ваши финансовые, временные и юридические риски на всех этапах</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы предвидим возможные негативные сценарии и действия сетевых или сбытовых компаний. Наша задача — минимизировать ваши финансовые, временные и юридические риски на всех этапах</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 4 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Знание — во благо</h3>
-                    <p>Наши уникальные компетенции на стыке юриспруденции и энергетики (два высших образования, опыт работы) направлены исключительно на защиту Ваших интересов и прав, а не на использование пробелов против вас</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Наши уникальные компетенции на стыке юриспруденции и энергетики (два высших образования, опыт работы) направлены исключительно на защиту Ваших интересов и прав, а не на использование пробелов против вас</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 5 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Приоритет прав потребителя</h3>
-                    <p>Ваши интересы как потребителя ресурса — в центре всего процесса. Мы восстанавливаем справедливость, если энергокомпании нарушают закон, злоупотребляют своим положением или необоснованно завышают платежи.</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Ваши интересы как потребителя ресурса — в центре всего процесса. Мы восстанавливаем справедливость, если энергокомпании нарушают закон, злоупотребляют своим положением или необоснованно завышают платежи.</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 6 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Доступность и понятность</h3>
-                    <p>Мы переводим сложный язык законов, нормативов и технических условий на простой, понятный вам язык. Вы всегда будете в курсе того, что происходит по вашему делу</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы переводим сложный язык законов, нормативов и технических условий на простой, понятный вам язык. Вы всегда будете в курсе того, что происходит по вашему делу</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 7 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>В первую очередь — специалист</h3>
-                    <p>Мы не «универсальные юристы». Наше образование и более чем 10-летний опыт работы именно в энергетике позволяют находить решения там, где другие видят лишь тупик</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы не «универсальные юристы». Наше образование и более чем 10-летний опыт работы именно в энергетике позволяют находить решения там, где другие видят лишь тупик</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 8 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Надёжность и партнёрство</h3>
-                    <p>Мы строим долгосрочные отношения с клиентами, сопровождая их деятельность и становясь надёжным партнёром в вопросах энергоправовых отношений.</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Мы строим долгосрочные отношения с клиентами, сопровождая их деятельность и становясь надёжным партнёром в вопросах энергоправовых отношений.</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
+            <!-- 9 -->
             <div class="principal-item">
                 <div class="icon-wrapper">
                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/galka.svg" alt="">
                 </div>
                 <div>
                     <h3>Ориентация на результат</h3>
-                    <p>Для нас важны не просто формально выигранные суды, а реальное изменение ситуации к лучшему: снижение сумм в счетах, фактическое подключение к сетям, взыскание положенных вам выплат и неустоек</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Для нас важны не просто формально выигранные суды, а реальное изменение ситуации к лучшему: снижение сумм в счетах, фактическое подключение к сетям, взыскание положенных вам выплат и неустоек</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
             <div class="principal-item">
@@ -165,7 +199,10 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
                 </div>
                 <div>
                     <h3>Взгляд со стороны эксперта</h3>
-                    <p>Обладая квалификацией судебного эксперта, мы даём объективную, независимую оценку документов и ситуаций, которая станет весомым аргументом в переговорах или суде</p>
+                    <p class="text-with-button">
+                        <span class="principal-text">Обладая квалификацией судебного эксперта, мы даём объективную, независимую оценку документов и ситуаций, которая станет весомым аргументом в переговорах или суде</span>
+                        <a href="#" class="read-more-link">Подробнее</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -556,6 +593,24 @@ $APPLICATION->SetTitle("ЭнергоПравовед");
             if (e.key === 'ArrowRight') nextBtn.click();
         });
     })();
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.read-more-link');
+        links.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Ищем ближайший родительский <p> с классом text-with-button,
+                // внутри него находим span.principal-text
+                const container = this.closest('.text-with-button');
+                const textSpan = container.querySelector('.principal-text');
+                if (textSpan) {
+                    textSpan.classList.toggle('expanded');
+                    this.textContent = textSpan.classList.contains('expanded') ? 'Скрыть' : 'Подробнее';
+                }
+            });
+        });
+    });
 </script>
 
 <section class="partners">
