@@ -679,7 +679,6 @@ nav a:hover {
     padding: 0; /* gap делает отступы */
   }
   /* скрываем кнопки и шкалу */
-  .carousel-btn,
   .progress-bar-wrapper {
     display: none !important;
   }
