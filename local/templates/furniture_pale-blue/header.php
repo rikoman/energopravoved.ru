@@ -56,8 +56,8 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/partners-carousel.js");
                         <!-- Обёртка: меню + контакты + соцсети + адрес -->
                         <div class="header-col header-nav-wrapper">
                             <ul class="header-menu">
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">О компании</a></li>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/news/">О компании</a></li>
                                 <li><a href="#">Услуги</a></li>
                                 <li><a href="#">Киоски</a></li>
                                 <li><a href="#">Контакты</a></li>
