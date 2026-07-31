@@ -37,7 +37,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/partners-carousel.js");
                                 <div>
                                     <img src="<?= SITE_TEMPLATE_PATH ?>/images/logo.svg" alt="ЭнергоПравовед">
                                 </div>
-                                <div>
+                                <div class="header-logo-text-container">
                                     <div class="header-logo-text">ЭнергоПравовед</div>
                                     <span class="header-logo-sub">юридическая компания</span>
                                 </div>

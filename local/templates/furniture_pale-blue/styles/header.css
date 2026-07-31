@@ -1,6 +1,3 @@
-/* ============================================
-   Базовые стили блока (header)
-============================================ */
 .header-block {
   position: relative;
   z-index: 2;
@@ -8,7 +5,6 @@
   color: #fff;
 }
 
-/* Сетка — на десктопе flex, на мобилках grid */
 .header-grid {
   display: flex;
   justify-content: space-between;
@@ -16,9 +12,6 @@
   flex-wrap: wrap;
 }
 
-/* ============================================
-   Логотип
-============================================ */
 .header-logo {
   display: flex;
   align-items: center;
@@ -48,9 +41,6 @@
   margin-top: 2px;
 }
 
-/* ============================================
-   Меню (навигация)
-============================================ */
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +50,6 @@
   margin: 0;
 }
 .header-menu li a {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: #fff;
@@ -71,10 +60,6 @@
   color: #d8b36a;
 }
 
-/* ============================================
-   Обёртка (меню + контакты + соцсети + адрес)
-   На десктопе — горизонтальный ряд
-============================================ */
 .header-nav-wrapper {
   display: flex;
   align-items: center;
@@ -83,9 +68,6 @@
   justify-content: flex-end;
 }
 
-/* ============================================
-   Контакты, соцсети, адрес (внутри wrapper)
-============================================ */
 .header-contacts {
   display: flex;
   align-items: center;
@@ -97,7 +79,6 @@
 }
 
 .header-contact-item {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
 }
@@ -124,14 +105,10 @@
 }
 
 .header-address {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 13px;
 }
 
-/* ============================================
-   Бургер-кнопка (скрыта на десктопе)
-============================================ */
 .header-burger {
   display: none;
 }
@@ -164,13 +141,10 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ============================================
-   Адаптив: планшеты и мобилки (≤ 992px)
-============================================ */
 @media (max-width: 992px) {
   .header-grid {
     display: grid;
-    grid-template-columns: 1fr auto; /* логотип | бургер */
+    grid-template-columns: 1fr auto;
     gap: 20px 30px;
     align-items: center;
   }
@@ -195,7 +169,7 @@
   .header-nav-wrapper {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    display: none; /* скрыто по умолчанию */
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -206,7 +180,6 @@
     display: flex;
   }
 
-  /* Все элементы внутри wrapper центрируются и идут вертикально */
   .header-menu {
     flex-direction: column;
     align-items: center;
@@ -232,9 +205,6 @@
   }
 }
 
-/* ============================================
-   Адаптив: маленькие мобилки (≤ 600px)
-============================================ */
 @media (max-width: 600px) {
   .header-grid {
     gap: 15px;
@@ -245,5 +215,58 @@
   }
   .header-menu {
     gap: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .header-logo-text-container {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 43px !important;
+    line-height: 53px !important;
+  }
+  .hero-text p {
+    font-size: 11.5px !important;
+  }
+  .elda {
+    font-size: 14px !important;
+  }
+  .principal-item h3 {
+    font-size: 16px !important;
+  }
+  .text-with-button {
+    font-size: 11.5px !important;
+  }
+  .acc-title {
+    font-size: 16px !important;
+  }
+  .acc-content {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 460px) {
+  .hero-text h1 {
+    font-size: 27.91px !important;
+    line-height: 32.09px !important;
+  }
+  .hero-text p {
+    font-size: 10px !important;
+  }
+  .elda {
+    font-size: 12px !important;
+  }
+  .principal-item h3 {
+    font-size: 12px !important;
+  }
+  .text-with-button {
+    font-size: 10px !important;
+  }
+  .acc-title {
+    font-size: 12px !important;
+  }
+  .acc-content {
+    font-size: 10px !important;
   }
 }
