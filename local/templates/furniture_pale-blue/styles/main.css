@@ -1227,6 +1227,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .hero-img {
+    display: none;
+  }
   .principal-item img {
     max-width: 50px;
   }
