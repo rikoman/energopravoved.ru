@@ -238,7 +238,7 @@ nav a:hover {
 }
 
 .principal {
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
 
 .principal h2,
@@ -380,7 +380,7 @@ nav a:hover {
 }
 
 .price {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .price h2 {
@@ -843,7 +843,7 @@ nav a:hover {
 }
 
 .contact-form {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .contact-form .container {
