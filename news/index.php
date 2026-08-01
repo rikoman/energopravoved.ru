@@ -47,7 +47,7 @@ $APPLICATION->SetTitle("Новости");
 			<div class="person-wrapper">
 				<div class="sidebar">
 					<div class="avatar-wrapper">
-						<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Илья Андреевич">
+						<img src="<?= SITE_TEMPLATE_PATH ?>/images/ilya.png" alt="Илья Андреевич">
 					</div>
 					<div class="profile-name">КОВАЛЕНКО<br>ИЛЬЯ АНДРЕЕВИЧ</div>
 					<div class="profile-title">Юрист - энергетик, эксперт по энергетике и ЖКХ.</div>
@@ -103,7 +103,7 @@ $APPLICATION->SetTitle("Новости");
 			</div>
 
 			<!-- Специалист 2 -->
-			<div class="person-wrapper">
+			<!-- <div class="person-wrapper">
 				<div class="sidebar">
 					<div class="avatar-wrapper">
 						<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Анна Петрова">
@@ -158,10 +158,10 @@ $APPLICATION->SetTitle("Новости");
 						<button class="about__btn">Примеры паспортов</button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Специалист 3 -->
-			<div class="person-wrapper">
+			<!-- <div class="person-wrapper">
 				<div class="sidebar">
 					<div class="avatar-wrapper">
 						<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Дмитрий Сидоров">
@@ -216,7 +216,7 @@ $APPLICATION->SetTitle("Новости");
 						<button class="about__btn">Выполненные проекты</button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
